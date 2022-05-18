@@ -1,7 +1,9 @@
-
-environment:
-    API_ID: $API_ID  
-    API_HASH: $API_HASH  
-    BOT_TOKEN: $BOT_TOKEN
-ports:
-    - 8080
+services:
+  ligrahamtito:
+    build: .
+    environment:
+      API_ID: $API_ID  
+      API_HASH: $API_HASH  
+      BOT_TOKEN: $BOT_TOKEN 
+    ports:
+      - 8080
